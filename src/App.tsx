@@ -1,23 +1,18 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const App = () => {
-  const[n, setN] = useState(0);
+  const[nome, setNome] = useState('Kane');
 
-  const handleMinus = () => {
-    setN(n-1);
-  }
-
-  const handleMore = () => {
-    setN(n+1);
+  const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setNome(event.target.value);
   }
 
   return(
     <div>
-      <button onClick={handleMinus}>-</button>
-      <div>
-        {n}
-      </div>
-      <button onClick={handleMore}>+</button>
+      Nome:
+      <input type="text" value={nome}  onChange={handleInput}/>
+      <hr />
+      Seu nome é: {nome}
     </div>
   );
 }
