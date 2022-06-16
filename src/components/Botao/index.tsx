@@ -1,10 +1,10 @@
-import './styles.css';
+import styles from './styles.module.css';
 
 export const Botao = () => {
     return(
-        <div className='botao-box'>
-            <button className="botao-btn">Lorem ipsum</button>
-            <p className='botao-legenda'>Legenda</p>
+        <div className={styles.box}>
+            <button className={styles.botao}>Lorem ipsum</button>
+            <p className={styles.legenda}>Legenda</p>
         </div>
     );
 }
