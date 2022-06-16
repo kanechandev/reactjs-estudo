@@ -1,12 +1,12 @@
-import { Botao } from "./components/Botao";
-
+import * as C from './AppStyles';
 
 const App = () => {
-  return(
-    <div>
-      <Botao/>
-    </div> 
-  );
+    return(
+        <C.Container>
+            Lorem ipsum
+            <C.Botao>Clique</C.Botao>
+        </C.Container>
+    );
 }
 
 export default App;
