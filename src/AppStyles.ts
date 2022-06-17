@@ -18,4 +18,21 @@ export const Container = styled.div<ContainerProps>`
     background-color: ${(props) => props.bgColor};
     color: white;
     padding: 20px;
+
+    span{
+        font-weigth: bold;
+        color: #963;
+    }
+
+    .link{
+        color: #fff;
+    }
+
+    .link:hover{
+        color: #fff;
+
+        &:hover{
+            color: #ff0000;
+        }
+    }
 `;
