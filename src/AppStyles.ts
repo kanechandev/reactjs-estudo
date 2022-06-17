@@ -18,6 +18,7 @@ export const Container = styled.div<ContainerProps>`
     background-color: ${(props) => props.bgColor};
     color: white;
     padding: 20px;
+    display: flex;
 
     span{
         font-weigth: bold;
@@ -35,4 +36,13 @@ export const Container = styled.div<ContainerProps>`
             color: #ff0000;
         }
     }
+
+    @media (max-width: 500px){
+        background-color: #87ceeb;
+        flex-direction: column;
+
+        span{
+            color: red;
+        }
+    };
 `;
